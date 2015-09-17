@@ -9,9 +9,7 @@
 <code>composer create-project laravel/laravel nm_project --prefer-dist</code>
 - Será criado um novo projeto na estrutura Laravel 5
 
-### CONFIGURAÇÃO DO LARAVEL 5
-
-#### DATABASE
+#### CONFIGURANDO DATABASE
 - Configurar o arquivo <code>.env</code> que fica na raiz do projeto:<br>
 <pre>
 DB_HOST=localhost
@@ -20,6 +18,8 @@ DB_USERNAME= db_username
 DB_PASSWORD= db_password
 </pre>
 
-#### Rodar servidor
+### INICIANDO APLICAÇÃO
 - <code>php artisan serve</code>
-- no browser: http://localhost:8000
+- Acesse a aplicação em: http://localhost:8000
+
+
