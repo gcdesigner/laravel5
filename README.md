@@ -41,9 +41,30 @@ elixir(function(mix) {
 });
 </pre>
 - Para rodar a task que irá concatenar todos os arquivos, basta digitar <code>gulp</code> no pront de comando.
+- Maiores informações: http://laravel.com/docs/5.0/elixir
 
 ### INICIANDO APLICAÇÃO
 - <code>php artisan serve</code>
 - Acesse a aplicação em: http://localhost:8000
 
 
+## TRABALHANDO COM BANCO DE DADOS
+
+### MIGRATIONS
+- <code>artisan migrate</code>
+- 
+
+### SEEDS
+<pre>
+public function run()
+{
+   \DB::table('users')->insert(array(
+        "name" => 'teste',
+        "email" => 'teste@teste.com.br',
+        "pass"  => \Hash::make('teste')
+
+    ));
+}
+</pre>
+- <code>composer dump-autoload</code>
+- <code>artisan db:seed</code>
